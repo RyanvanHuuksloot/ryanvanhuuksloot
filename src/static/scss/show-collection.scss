@@ -1,0 +1,29 @@
+.show-collection {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* width */
+.show-collection::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+/* Track */
+.show-collection::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+  bottom: 10px;
+}
+
+/* Handle */
+.show-collection::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.show-collection::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.85);
+}

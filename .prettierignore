@@ -1,0 +1,10 @@
+node_modules
+coverage
+dist
+build
+lib
+scripts
+config
+.build
+.github
+README.md

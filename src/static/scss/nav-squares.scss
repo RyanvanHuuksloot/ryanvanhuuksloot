@@ -1,0 +1,35 @@
+$main_color: orange;
+
+.nav-wrapper {
+  position: absolute;
+  padding: 0 2rem;
+  margin: 0;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+}
+.nav-squares-wrapper {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-square-wrapper {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+
+  svg {
+    fill: grey;
+    stroke: grey;
+    cursor: pointer;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  svg.active {
+    fill: $main_color;
+    stroke: $main_color;
+  }
+}

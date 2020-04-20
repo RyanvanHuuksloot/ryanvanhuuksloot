@@ -1,0 +1,34 @@
+.location-wrapper {
+  z-index: 999;
+  display: inline-block;
+  position: absolute;
+  height: 45px;
+  background-color: #20232d;
+  border-radius: 15px 0px 0px 15px;
+  bottom: 20px;
+  right: 0;
+  text-align: center;
+}
+
+.location-svg {
+  position: relative;
+  height: 60%;
+  width: auto;
+  padding: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.location-text {
+  display: inline-block;
+  color: white;
+  position: relative;
+  top: 0;
+  margin-right: 6px;
+  text-transform: uppercase;
+  color: #aeacab;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
