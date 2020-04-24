@@ -21,7 +21,7 @@ function App(props) {
 
   // Navigation Handling
   UseKeyPress(currentSlide, numberOfSlides, setCurrentSlide);
-  UseScroll(currentSlide, numberOfSlides, setCurrentSlide);
+  // UseScroll(currentSlide, numberOfSlides, setCurrentSlide);
 
   const introSlide = {
     content: (
@@ -70,6 +70,19 @@ function App(props) {
     ),
     title: "What I Do"
   };
+
+  // <div className="slide">
+  //   <Panel styles={["left", "lightblue-background"]}>
+  //     <Timeline2 />
+  //   </Panel>
+  //   <Panel styles={["right"]}>
+  //     <PanelContainer
+  //       header="What I Do"
+  //       title="Work Experience"
+  //       excerpt="I am a passionate technology enthusiast who loves building and learning new things!"
+  //     />
+  //   </Panel>
+  //   </div>
 
   const contactSlide = {
     content: (

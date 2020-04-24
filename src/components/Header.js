@@ -5,10 +5,6 @@ function Header(props) {
   return (
     <div className="header-wrapper">
       <div className="header">
-        <div className="menu-wrapper">
-          <div className="menu-hamburger"></div>
-          <div className="menu-txt">Menu</div>
-        </div>
         <div className="logo-wrapper">
           <div className="logo">
             <svg
@@ -21,10 +17,14 @@ function Header(props) {
             </svg>
           </div>
         </div>
-        <div className="shop-wrapper"></div>
       </div>
     </div>
   );
 }
 
 export default Header;
+
+// <div className="menu-wrapper">
+//   <div className="menu-hamburger"></div>
+//   <div className="menu-txt">Menu</div>
+// </div>;

@@ -1,24 +1,29 @@
 import "../static/scss/timeline.scss";
 import React from "react";
 
+//https://codepen.io/clintabrown/pen/yoFcC
 function Timeline(props) {
   return (
     <div class="timeline">
-      <div class="timeline-event">
-        <div class="timeline-event-icon"></div>
-        <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">March 2018 - Present</p>
-          <h3>Sr. Data Scientist</h3>
-          <h4>Capital One</h4>
+      <div class="timeline-events">
+        <div class="timeline-event timeline-event-years-5">
+          <h2>2013-2017</h2>
+          <h3>Queen's University</h3>
+          <h4>Bachelor of Commerce with Honours and Distinction</h4>
+          <h4>Bachelor of Computer Science with Distinction</h4>
+        </div>
+        <div class="timeline-event timeline-event-years-5">
+          <h2>2018-Present</h2>
+          <h3>Capital One</h3>
+          <h4>Data Scientist</h4>
         </div>
       </div>
-      <div class="timeline-event">
-        <div class="timeline-event-icon"></div>
-        <div class="timeline-event-copy">
-          <p class="timeline-event-thumbnail">September 2013 - December 2017</p>
-          <h4>B.Comm/Bachelor of Computer Science</h4>
-          <h5>Queen's University</h5>
-        </div>
+      <div class="timelines-years">
+        <div>2014</div>
+        <div>2016</div>
+        <div>2018</div>
+        <div>2020</div>
+        <div>2022</div>
       </div>
     </div>
   );

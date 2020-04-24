@@ -4,7 +4,7 @@
 
 -   Slide 1: Intro, name, picture of myself etc
 -   Slide 2: Work experience, timeline on left, info on right about what I do and what I enjoy working on
--   Slide 3: Things I enjoy
+-   Slide 3: Things I enjoy (music - dermot, tv shows, movies, etc)
 -   Slide 4: Contact me
 
 Do social media icons
