@@ -1,4 +1,4 @@
-import "../static/scss/nav-squares.scss";
+import "../../static/scss/nav-squares.scss";
 import React from "react";
 
 function NavSquares(props) {

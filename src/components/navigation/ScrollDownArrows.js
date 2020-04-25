@@ -1,4 +1,4 @@
-import "../static/scss/scroll-down-arrows.scss";
+import "../../static/scss/scroll-down-arrows.scss";
 import React from "react";
 
 function ScrollDownArrows(props) {

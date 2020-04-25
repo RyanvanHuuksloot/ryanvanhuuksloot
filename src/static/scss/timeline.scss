@@ -5,15 +5,43 @@ $grid-line-color: #000;
 $timeline-events-no: 3;
 $timeline-events-line-height: 8px;
 $timeline-years-no: 10;
-$grid-width: 5vw;
+$grid-width: calc(max(10vw, 150px));
 // $grid-width: #{100vw / $timeline-years-no};
 
-.timeline {
+body {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1f1f1f;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #777;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.timeline-slide {
+  position: absolute;
   font-family: sans-serif;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
   background: $grid-background-color;
   background-image: linear-gradient(
@@ -22,14 +50,14 @@ $grid-width: 5vw;
     $grid-background-color calc(#{$grid-width} - 1px),
     $grid-line-color $grid-width
   );
-  background-size: $grid-width $grid-width;
+  background-size: $grid-width 100%;
+  font-size: 0;
 }
 
 /* Timeline - Years */
 .timelines-years {
-  position: absolute;
-  top: 55%;
-  transform: translateY(-50%);
+  position: relative;
+  bottom: -75px;
   padding: 0 0 0 calc(#{$grid-width});
   margin: 0;
   border-top: 1px solid #282828;
@@ -57,9 +85,18 @@ $grid-width: 5vw;
 }
 
 /* Timeline - Events */
-.timeline-events {
+.timeline-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.timeline {
   position: absolute;
-  top: 42%;
+  top: 45%;
   transform: translateY(-50%);
 }
 

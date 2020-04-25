@@ -1,5 +1,18 @@
 # Personal Site
 
+## Setup
+
+### Local Development
+
+1.  Install npm
+2.  Install the required packages `npm install`
+
+### Mobile Development
+
+1.  Follow the steps in Local Development
+2.  Enable `Port Forwarding` in [Chrome Dev Tools](chrome://inspect/#devices)
+3.  Run `adb reverse tcp:3000 tcp:3000`
+
 ## Slides
 
 -   Slide 1: Intro, name, picture of myself etc

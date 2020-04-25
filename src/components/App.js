@@ -1,14 +1,11 @@
 import "../static/scss/app.scss";
 import React, {useState, useEffect} from "react";
 import Panel from "./Panel";
-import NavSquares from "./NavSquares";
+import {NavSquares, UseScroll, UseKeyPress, ScrollDownArrows} from "./navigation";
+import {WorkSlide, ContactSlide} from "./slides";
 import Headshot from "../static/img/headshot.jpg";
 import Header from "./Header";
 import PanelContainer from "./PanelContainer";
-import UseKeyPress from "./UseKeyPress";
-import UseScroll from "./UseScroll";
-import ScrollDownArrows from "./ScrollDownArrows";
-import Timeline from "./Timeline";
 
 function App(props) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -53,50 +50,7 @@ function App(props) {
     title: "About Me"
   };
 
-  const workSlide = {
-    content: (
-      <div className="slide">
-        <Panel styles={["left", "lightblue-background"]}>
-          <Timeline />
-        </Panel>
-        <Panel styles={["right"]}>
-          <PanelContainer
-            header="What I Do"
-            title="Work Experience"
-            excerpt="I am a passionate technology enthusiast who loves building and learning new things!"
-          />
-        </Panel>
-      </div>
-    ),
-    title: "What I Do"
-  };
-
-  // <div className="slide">
-  //   <Panel styles={["left", "lightblue-background"]}>
-  //     <Timeline2 />
-  //   </Panel>
-  //   <Panel styles={["right"]}>
-  //     <PanelContainer
-  //       header="What I Do"
-  //       title="Work Experience"
-  //       excerpt="I am a passionate technology enthusiast who loves building and learning new things!"
-  //     />
-  //   </Panel>
-  //   </div>
-
-  const contactSlide = {
-    content: (
-      <div className="slide">
-        <Panel styles={["left"]}>
-          <PanelContainer header="Keep In Touch" title="Contact Details" />
-        </Panel>
-        <Panel styles={["right", "lightblue-background"]}></Panel>
-      </div>
-    ),
-    title: "Keep in Touch"
-  };
-
-  const slides = [introSlide, workSlide, contactSlide];
+  const slides = [introSlide, WorkSlide, ContactSlide];
 
   useEffect(() => {
     // Update the document title using the browser API
