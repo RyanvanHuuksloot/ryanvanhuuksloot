@@ -1,8 +1,80 @@
+@import "../main.scss";
+$menu-color: #fe2e62;
+
 .mobile-menu {
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  &.active {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: white;
+    animation: expand 0.5s ease 0s 1 normal forwards;
+  }
+}
+
+@keyframes expand {
+  0% {
+    height: 30px;
+    width: 40px;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-items {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-out 0.3s 1 forwards;
+
+  .menu-item {
+    @include unselectable;
+
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: $menu-color;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #0e00aa;
+    }
+  }
+}
+
+.mobile-menu-hamburger {
+  @include unselectable;
+
   width: 40px;
   height: 30px;
   position: relative;
   margin: 16px;
+  background: transparent;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -12,21 +84,13 @@
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent; /* Android */
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome, Opera and Firefox */
 
   span {
     display: block;
     position: absolute;
     height: 5px;
     width: 100%;
-    background: #0f0f0f;
+    background: $menu-color;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -52,7 +116,7 @@
   }
 
   &.active span:nth-child(1) {
-    top: 18px;
+    top: 10px;
     width: 0%;
     left: 50%;
   }
@@ -61,7 +125,7 @@
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: orange;
+    background: $menu-color;
   }
 
   &.active span:nth-child(3) {
@@ -69,11 +133,11 @@
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background: orange;
+    background: $menu-color;
   }
 
   &.active span:nth-child(4) {
-    top: 18px;
+    top: 10px;
     width: 0%;
     left: 50%;
   }
