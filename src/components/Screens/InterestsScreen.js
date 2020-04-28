@@ -1,4 +1,4 @@
-import "../../static/scss/interests-screen.scss";
+import "../../static/scss/screens/interests-screen.scss";
 import React, {useState} from "react";
 
 function InterestsScreen(props) {
