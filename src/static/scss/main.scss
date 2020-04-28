@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
 @mixin unselectable {
   -webkit-tap-highlight-color: transparent; /* Android */
   -webkit-touch-callout: none; /* iOS Safari */
@@ -7,4 +10,8 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Opera and Firefox */
+}
+
+* {
+  box-sizing: border-box;
 }
