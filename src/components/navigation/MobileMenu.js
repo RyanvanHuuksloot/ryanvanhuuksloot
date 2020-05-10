@@ -26,12 +26,6 @@ function MobileMenu(props) {
           <div className="menu-item" onClick={() => props.changeCurrentScreen("home")}>
             <h3>Home</h3>
           </div>
-          <div className="menu-item" onClick={() => props.changeCurrentScreen("about")}>
-            <h3>About Me</h3>
-          </div>
-          <div className="menu-item" onClick={() => props.changeCurrentScreen("work")}>
-            <h3>Work</h3>
-          </div>
           <div
             className="menu-item"
             onClick={() => props.changeCurrentScreen("interests")}>
@@ -51,5 +45,6 @@ function MobileMenu(props) {
 export default MobileMenu;
 
 MobileMenu.propTypes = {
-  menuActive: PropTypes.bool
+  menuActive: PropTypes.bool,
+  changeCurrentScreen: PropTypes.func
 };

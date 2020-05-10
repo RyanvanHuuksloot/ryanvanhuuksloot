@@ -1,11 +1,12 @@
 import "../static/scss/app.scss";
 import React, {useState} from "react";
-import {HomeScreen, InterestsScreen} from "./Screens";
+import {HomeScreen, InterestsScreen, ContactScreen} from "./Screens";
 import {MobileMenu} from "./navigation";
 
 const screens = {
   home: <HomeScreen />,
-  interests: <InterestsScreen />
+  interests: <InterestsScreen />,
+  contact: <ContactScreen />
 };
 
 function App(props) {

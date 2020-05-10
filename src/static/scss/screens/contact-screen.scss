@@ -1,0 +1,79 @@
+@import "../main.scss";
+
+.contact-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-square-one {
+  position: absolute;
+  top: 22.5%;
+  left: 24%;
+  width: 28%;
+  height: 25%;
+  background-color: $primary_accent_color;
+  z-index: -1;
+}
+
+.contact-square-two {
+  position: absolute;
+  top: 42.5%;
+  left: 44%;
+  width: 28%;
+  height: 25%;
+  background-color: $tertiary_accent_color;
+  z-index: -2;
+}
+
+.contact-title {
+  position: relative;
+  letter-spacing: 0.15em;
+  color: $primary_color;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 2.4rem;
+  padding: 6px;
+  margin: 12px;
+  text-align: center;
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media screen and (max-width: 480px) {
+  .contact-title {
+    font-size: 1.1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+.contact-description {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contact-social-media-wrapped {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.contact-icon {
+  color: $primary_color;
+  margin: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: $secondary_accent_color;
+  }
+}

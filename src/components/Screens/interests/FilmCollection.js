@@ -15,7 +15,7 @@ function FilmCollection(props) {
       imageSource: "./alita-battle-angel.jpg",
       pixelColor: "#39566d"
     },
-    {id: 38757, name: "Tangled", imageSource: "./tangled.jpg", pixelColor: "#39566d"},
+    {id: 38757, name: "Tangled", imageSource: "./tangled.jpg", pixelColor: "#af8561"},
     {
       id: 332562,
       name: "A Star Is Born",
