@@ -1,7 +1,16 @@
 import "../../static/scss/navigation/mobile-menu.scss";
-import React from "react";
+import React, {useEffect} from "react";
+import PropTypes from "prop-types";
 
 function MobileMenu(props) {
+  useEffect(() => {
+    if (props.menuActive && document.body.style.overflow !== "hidden") {
+      document.body.style.overflow = "hidden";
+    } else if (!props.menuActive && document.body.style.overflow === "hidden") {
+      document.body.style.overflow = "unset";
+    }
+  }, [props.menuActive]);
+
   return (
     <div className={`mobile-menu ${props.menuActive ? "active" : ""}`}>
       <div
@@ -40,3 +49,7 @@ function MobileMenu(props) {
 }
 
 export default MobileMenu;
+
+MobileMenu.propTypes = {
+  menuActive: PropTypes.bool
+};

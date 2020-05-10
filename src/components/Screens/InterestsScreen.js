@@ -5,7 +5,7 @@ import {FilmCollection, MusicCollection, TelevisionCollection} from "./interests
 function InterestsScreen(props) {
   const [currentTab, setCurrentTab] = useState("music");
 
-  const tabs = ["music", "television", "films", "books"];
+  const tabs = ["music", "television", "films"];
   const collections = {
     music: <MusicCollection />,
     films: <FilmCollection />,
@@ -18,7 +18,7 @@ function InterestsScreen(props) {
 
   return (
     <div className="interest-wrapper">
-      <h1>Interests</h1>
+      <h1 className="interest-name">Interests</h1>
       <div className="interest-menu">
         {tabs.map((tab, index) => {
           return (
@@ -39,3 +39,5 @@ function InterestsScreen(props) {
 }
 
 export default InterestsScreen;
+
+InterestsScreen.propTypes = {};

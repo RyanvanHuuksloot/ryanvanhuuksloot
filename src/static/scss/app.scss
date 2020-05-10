@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,300");
+@import "./main.scss";
 
 html,
 body,
@@ -64,6 +64,10 @@ caption {
   background: transparent;
   font-family: "Poppins", sans-serif;
 }
+
+// html {
+//   overflow-y: scroll;
+// }
 
 ::-webkit-scrollbar {
   width: 10px;

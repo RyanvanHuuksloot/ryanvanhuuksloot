@@ -11,7 +11,7 @@ const screens = {
 function App(props) {
   const [mobileMenuOpen, setMobileMenu] = useState(false);
   const [mobileMenuOpening, setMobileMenuOpening] = useState(0);
-  const [currentScreen, setCurrentScreen] = useState("interests");
+  const [currentScreen, setCurrentScreen] = useState("home");
 
   const mobileMenuClick = () => {
     if (!mobileMenuOpening) {

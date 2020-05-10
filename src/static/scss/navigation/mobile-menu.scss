@@ -1,5 +1,4 @@
 @import "../main.scss";
-$menu-color: #fe2e62;
 
 .mobile-menu {
   position: absolute;
@@ -14,7 +13,7 @@ $menu-color: #fe2e62;
     width: 100%;
     padding: 0;
     margin: 0;
-    background: white;
+    background: $primary_color;
     animation: expand 0.5s ease 0s 1 normal forwards;
   }
 }
@@ -49,13 +48,14 @@ $menu-color: #fe2e62;
   margin: 0;
   opacity: 0;
   animation: slideInFromLeft 1s ease-out 0.3s 1 forwards;
+  background: transparent;
 
   .menu-item {
     @include unselectable;
 
     text-align: center;
     font-family: "Poppins", sans-serif;
-    color: $menu-color;
+    color: $primary_accent_color;
     position: relative;
     display: block;
     font-weight: bold;
@@ -64,7 +64,7 @@ $menu-color: #fe2e62;
     cursor: pointer;
 
     &:hover {
-      color: #707070;
+      color: $primary_background_color;
     }
   }
 }
@@ -75,7 +75,7 @@ $menu-color: #fe2e62;
   width: 40px;
   height: 30px;
   position: relative;
-  margin: 16px;
+  margin: 18px;
   background: transparent;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -92,7 +92,7 @@ $menu-color: #fe2e62;
     position: absolute;
     height: 5px;
     width: 100%;
-    background: $menu-color;
+    background: $primary_color;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -127,7 +127,7 @@ $menu-color: #fe2e62;
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: $menu-color;
+    background: $primary_accent_color;
   }
 
   &.active span:nth-child(3) {
@@ -135,7 +135,7 @@ $menu-color: #fe2e62;
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background: $menu-color;
+    background: $primary_accent_color;
   }
 
   &.active span:nth-child(4) {
