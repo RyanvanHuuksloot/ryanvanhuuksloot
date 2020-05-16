@@ -9,6 +9,8 @@
 
 ### Mobile Development
 
+#### Android
+
 1.  Follow the steps in Local Development
 2.  Enable `Port Forwarding` in [Chrome Dev Tools](chrome://inspect/#devices)
 3.  Run `adb reverse tcp:3000 tcp:3000`
@@ -38,3 +40,8 @@
 3.  SCSS mixins are super useful!
     @mixin then using it through an @import and @include
 4.  Keyframes in CSS are the backbone of all awesome animations!
+
+### blog topics
+
+-   Who you surround yourself virtually matters as much as the 5 people you spend the most time with (social media)
+-   Why the washroom is always empty over lunch
