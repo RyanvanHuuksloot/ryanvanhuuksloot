@@ -5,13 +5,13 @@
     "main.js.map": "/static/js/main.438e597d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.64fa3b4a.js",
     "runtime-main.js.map": "/static/js/runtime-main.64fa3b4a.js.map",
-    "static/js/2.3af90c75.chunk.js": "/static/js/2.3af90c75.chunk.js",
-    "static/js/2.3af90c75.chunk.js.map": "/static/js/2.3af90c75.chunk.js.map",
+    "static/js/2.d1164321.chunk.js": "/static/js/2.d1164321.chunk.js",
+    "static/js/2.d1164321.chunk.js.map": "/static/js/2.d1164321.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.107f44c57316ce2f6db0275cf13e2859.js": "/precache-manifest.107f44c57316ce2f6db0275cf13e2859.js",
+    "precache-manifest.3cedfff497d0c984d75f3f395dbb747f.js": "/precache-manifest.3cedfff497d0c984d75f3f395dbb747f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.70ad75e0.chunk.css.map": "/static/css/main.70ad75e0.chunk.css.map",
-    "static/js/2.3af90c75.chunk.js.LICENSE.txt": "/static/js/2.3af90c75.chunk.js.LICENSE.txt",
+    "static/js/2.d1164321.chunk.js.LICENSE.txt": "/static/js/2.d1164321.chunk.js.LICENSE.txt",
     "static/media/a-discovery-of-witches.jpg": "/static/media/a-discovery-of-witches.ce26d3a2.jpg",
     "static/media/a-star-is-born.jpg": "/static/media/a-star-is-born.9f68ab12.jpg",
     "static/media/alita-battle-angel.jpg": "/static/media/alita-battle-angel.241dfe0c.jpg",
@@ -37,7 +37,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.64fa3b4a.js",
-    "static/js/2.3af90c75.chunk.js",
+    "static/js/2.d1164321.chunk.js",
     "static/css/main.70ad75e0.chunk.css",
     "static/js/main.438e597d.chunk.js"
   ]
